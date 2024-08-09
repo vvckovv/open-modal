@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2A303C;
+}
+
+.container button {
+    width: 150px;
+    height: 50px;
+    padding: 2em;
+    transform: translateY(600%);
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #1F242D;
+    color: #A6ADBA;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #1b1e25;
+}
+
+.congr-btn {
+    width: 350px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #1F242D;
+    padding: 50px 100px;
+    transform: translateY(100%);
+    color: #A6ADBA;
+}
+
+.popup {
+    width: 540px;
+    height: 250px;
+    padding: 2em;
+    background-color: #1F242D;
+    transform: translateY(80%) scale(0.1);
+    justify-content: center;
+    margin: auto;
+    color: #A6ADBA;
+    border: none;
+    border-radius: 15px;
+    visibility: hidden;
+    transition: top 0ms ease-in-out 0ms;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translateY(80%) scale(1);
+    transition: top 0ms ease-in-out 0ms;
+}
+
+.congr-heading {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.congr-heading p {
+    margin-top: 1.5em;
+    font-size: 15px;
+}
+
+.yay-btn {
+    margin-top: 3em;
+    border: none;
+    border-radius: 15px;
+    justify-content: right;
+    align-items: right;
+    
+}
+
+.yay-btn button {
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    left: 430px;
+    background-color: #191D24;
+    color: #A6ADBA;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.yay-btn button:hover {
+    background-color: #13161a;   
+}
+
+.yay-btn button:active {
+    background-color: #13161a
+}
+
+
+@media screen and (max-width: 700px) {
+    .container button {
+        width: 150px;
+        height: 50px;
+        padding: 2em;
+        transform: translateY(500%);
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #1F242D;
+        color: #A6ADBA;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .popup {
+        width: 300px;
+        height: 250px;
+        padding: 2em;
+        background-color: #1F242D;
+        transform: translateY(80%) scale(0.1);
+        justify-content: center;
+        margin: auto;
+        color: #A6ADBA;
+        border: none;
+        border-radius: 15px;
+        visibility: hidden;
+        transition: top 0ms ease-in-out 0ms;
+    }
+
+    .open-popup {
+        visibility: visible;
+        transform: translateY(60%) scale(1);
+        transition: top 0ms ease-in-out 0ms;
+    }
+    
+    .yay-btn {
+        margin-top: 1.5em;
+        border: none;
+        border-radius: 15px;
+        justify-content: right;
+        align-items: right;  
+    }
+    
+    .yay-btn button {
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        left: 220px;
+        background-color: #191D24;
+        color: #A6ADBA;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .yay-btn button:hover {
+        background-color: #13161a;   
+    }
+}
+
+
+
+
